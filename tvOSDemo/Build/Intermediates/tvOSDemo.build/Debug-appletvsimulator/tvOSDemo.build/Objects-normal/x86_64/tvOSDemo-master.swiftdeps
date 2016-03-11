@@ -1,6 +1,5 @@
 version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
-options: "802516255e5c1f4e738d7262d0177721"
-build_time: [510707951, 368900000]
+options: "4db794ed2426b27e9024aecc5daca65a"
+build_time: [511035314, 471457000]
 inputs:
-  "/Users/rodrigo.s.mulkey/Desktop/Git/tvOS/tvOSDemo/tvOSDemo/ViewController.swift": [510707948, 0]
   "/Users/rodrigo.s.mulkey/Desktop/Git/tvOS/tvOSDemo/tvOSDemo/AppDelegate.swift": [510707948, 0]
