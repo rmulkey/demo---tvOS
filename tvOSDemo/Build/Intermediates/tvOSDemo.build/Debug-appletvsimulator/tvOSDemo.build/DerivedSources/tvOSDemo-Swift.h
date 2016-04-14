@@ -87,23 +87,23 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import TVMLKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
+@class TVApplicationController;
 @class UIApplication;
 @class NSObject;
 
 SWIFT_CLASS("_TtC8tvOSDemo11AppDelegate")
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, TVApplicationControllerDelegate>
 @property (nonatomic, strong) UIWindow * __nullable window;
+@property (nonatomic, strong) TVApplicationController * __nullable appController;
++ (NSString * __nonnull)TVBaseURL;
++ (NSString * __nonnull)TVBootURL;
 - (BOOL)application:(UIApplication * __nonnull)application didFinishLaunchingWithOptions:(NSDictionary * __nullable)launchOptions;
-- (void)applicationWillResignActive:(UIApplication * __nonnull)application;
-- (void)applicationDidEnterBackground:(UIApplication * __nonnull)application;
-- (void)applicationWillEnterForeground:(UIApplication * __nonnull)application;
-- (void)applicationDidBecomeActive:(UIApplication * __nonnull)application;
-- (void)applicationWillTerminate:(UIApplication * __nonnull)application;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
